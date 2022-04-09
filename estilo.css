@@ -1,0 +1,156 @@
+*{
+    font-family: 'Fredoka One', cursive; 
+}
+#navbarTogglerDemo02{
+    display: flex;
+    justify-content: space-between;
+}
+#navbarTogglerDemo02>a{
+    color: black;
+}
+.carousel-caption{
+    color:black;
+    font-size: xx-large;
+    font-family: 'Fredoka One', cursive;   
+}
+#subtitulo{
+    font-family: 'Fredoka One', cursive;   
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#HOLA{
+    display: flex;
+    font-family:'Fredoka One', cursive ;
+    color: white;
+    background-image: url(Images/madera_negra.jpg);
+    justify-content: space-between;
+}
+
+#principal{
+    display: flex;
+    justify-content: right;
+    margin-right: 50px;
+    
+}
+.card{
+    width: 400px; 
+    padding: 10px;
+     
+    border-color: green; 
+    margin: 40px;
+    border-style: ridge 15px;
+    transition-duration: 0.5s;
+}
+.card:hover{
+    border-style: solid ;
+    border-width: 2px; 
+    transition-duration: 0.5s;
+}
+.card>a{
+    text-decoration: none ;
+    color: black;
+}
+
+
+.row{
+    display: flex;
+    justify-content: center;
+  
+}
+.nav-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .nav-item>a{
+    opacity: 80%;
+    transition-duration: 0.5s;
+  }
+  .nav-item>a:hover{
+    opacity: 110%;
+    transition-duration: 0.5s;
+    transform: scale(1.1);
+  }
+#hola>.nav-item>.nav-link{
+    opacity: 100%;
+}
+#subtitulo>h1{
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+
+}
+.carousel-item{
+    -webkit-text-stroke: 1px white;
+}
+
+.card>.btn{
+    opacity: 20%;
+    transition: 0.5s;
+}
+
+.card>.btn:hover{
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+#edicion{
+    display: flex;
+    justify-content: center;
+}
+#boton_agregar{
+    display: flex; 
+    justify-content: space-between;
+    width: 100%;
+}
+#men>a{
+   text-decoration: none;
+   color: black;
+}
+#men{
+    margin: 20px;
+    transition: 0.3s;
+}
+#men:hover{
+    border-style: solid;
+
+    border-color: black;
+   transition: 0.3s;
+}
+
+#venta{
+    width: 50%;
+}
+#imagen_precio{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+#venta{
+    margin-top: 45px;
+    width: 500px;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 180px;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+#boton{
+    display: flex;
+    justify-content: left;
+}
+#descripcion{
+    margin-left: 300px;
+    margin-right: 200px;
+    border-style: solid;
+    border-width: 1px;
+}
+

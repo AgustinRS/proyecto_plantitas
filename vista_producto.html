@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantitas</title>
+    <link rel="shortcut icon" href="images/icono_pestaña.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <link rel="stylesheet" href="estilo.css">
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+        
+        </style> 
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <nav class="navbar navbar-light " style="background-image: url(Images/madera_negra.jpg) ;">
+        <div class="container-fluid">
+          <a class="navbar-brand" style="font-family: 'Fredoka One', cursive;   ; font-size: x-large; color: white;" ><img src="Images/logo.png" alt="">PLANTITAS</a>
+          <form class="d-flex">
+            <input class="form-control me-2" type="Bus" placeholder="¿Qué estás buscando?" aria-label="Buscar" style="min-width: 400px;margin-bottom: 10px; " >
+            <button class="btn btn-outline-success" type="submit"><img src="Images/lupa.png" alt=""></button>
+          </form>
+          <div id="principal">
+          <div class="dropdown">
+
+            <a href="Subscripcion.html"><button class="btn btn-success" type="button"  style="background-color: transparent; margin-right: 10px;">
+              Subscribirse!
+            </button>
+          </a>
+          
+            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: transparent; margin-right: 10px;">
+              Iniciar sesión
+            </button>
+            <div class="dropdown-menu">
+              
+
+              <form class="px-4 py-3">
+                <div class="mb-3">
+                  <label for="exampleDropdownFormEmail1" class="form-label">Correo electrónico</label>
+                  <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleDropdownFormPassword1" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                </div>
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                    <label class="form-check-label" for="dropdownCheck">
+                      Recuérdame
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+              </form>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="Registro.html">Eres nuevo aquí? Registrate</a>
+              <a class="dropdown-item" href="#">Olvidó la contraseña?</a>
+            </div>
+          </div>
+
+          <button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="background-color: transparent;"><img src="Images/shopcar.png" alt=""></button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">CARRITO</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div >
+
+            <div class="offcanvas-body" style="margin: 100px;">
+              <img src="Images/carrito_compra.png" alt="">
+              <H3>Carro Vacio</H3>
+            </div>
+          </div>
+        </div>     
+      </div>
+      </nav>
+
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText" >
+            <div class="navbar-nav" style="display: flex; justify-content: space-between;width: 100%;">
+              <div class="nav-item">
+                <a href="planta_semilla.html"><img src="Images/planta_semillas_menu.jpg" alt="" style="width: 100px; border-radius: 50%; margin: 0PX 100px 0px 500;"></a>
+                <a class="nav-link" href="planta_semilla.html">PLANTAS Y SEMILLAS</a>
+              </div>
+              <div class="nav-item">
+               <a href="Macetas.html"><img src="Images/macetas_menu.jpg" alt="" style="width: 100px; border-radius: 50%; margin: 0px 50px 0px 50px;"></a> 
+                <a class="nav-link" href="Macetas.html">MACETAS</a>
+              </div>
+              <div class="nav-item">
+               <a href="tierra_fertilizante.html"><img src="Images/tierra_fertilizante_menu.jpg" alt="" style="width: 100px; border-radius: 50%; margin: 0px 50px 0px 50px;"></a> 
+                <a class="nav-link" href="tierra_fertilizante.html">TIERRA Y FERTILIZANTE</a>
+              </div>
+              <div class="nav-item">
+                <a href="Accesorios.html"><img src="Images/porta_maceta_accesorios_menu.jpg" alt="" style="width: 100px; border-radius: 50%; margin: 0px 50px 0px 50px;"></a> 
+                <a class="nav-link" href="Accesorios.html">ACCESORIOS</a>
+              </div>
+              <div class="nav-item">
+                <a href="Insecticida.html"><img src="Images/incecticida_suplementos_menu.jpg" alt="" style="width: 100px; border-radius: 50%; margin: 0px 50px 0px 50px;"></a> 
+                <a class="nav-link" href="Insecticida.html">INSECTICIDA</a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </nav>
+    
+      <div id="producto">
+          <div id="imagen_precio">
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="width: 400px; margin: 50px;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Images/bonsai.jpg" class="d-block w-100" alt="..." >
+          </div>
+          <div class="carousel-item">
+            <img src="Images/bonsai.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/bonsai.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <div id="venta">
+        <div class="card-header" style="display: flex;justify-content: left; align-items: center;">
+          <img src="Images/logo.png" alt="" style="width: 30px;"><p style="margin-top: 10px;"> Plantitas</p>
+          
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Bonsai  Mr.miyagi</h4>
+          <p>Categoria: Plantas y semillas</p>
+          <h2>$50.000 c/u</h2>
+          <div id="boton">
+            <div id="container" >            
+                <button onclick="increment(1) " style="background-color: white;">+</button>  
+                <h2 id="counting">0</h2>
+                <button onclick="decrement(1)" style= "background-color:white;">-</button>         
+            </div>
+          <a href="#" class="btn btn-success">Agregar a la cesta</a>
+          <a href="index1.html" class="btn btn-success" style="margin-left: 5px;">Volver al menú principal</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <div id="descripcion">
+        <div style="background-color: #198754;">
+            <h4 style="margin-left: 10px;">  Descripcion</h4>
+        </div>
+        <div style="margin-left: 10px; margin-right: 10px;">
+            <p>corporis omnis sint quia odio numquam sed officia autem nostrum provident dolorum tempore nemo voluptatum placeat error incidunt repellendus. Eum, architecto nisi assumenda consectetur eius atque reiciendis sed iusto excepturi voluptas sint odio labore debitis in id aliquid ipsam magni iste beatae consequatur commodi expedita. Voluptas ut soluta consequatur quaerat temporibus, quae velit laboriosam tenetur sequi magni quasi fugit reprehenderit sed. Architecto officia dicta veniam facilis tempora maiores assumenda in quod. Tempora repellendus minus, ullam omnis necessitatibus ducimus ut modi ipsa commodi error quod quibusdam earum cupiditate possimus cumque unde nostrum.</p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+      <nav class="navbar navbar-expand-lg  bg-light">
+        <div id="HOLA" class="container-fluid">
+          <p class="navbar-brand " href="#"> <img src="Images/icons8_facebook_like_50px.png" alt=""> SIGUENOS <img src="Images/icons8_heart_50px.png" alt="" style="margin-right: 50px;"></p>
+          <button class="navbar-toggler " type="button " data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation "   >
+            <span class="navbar-toggler-icon" style="background-image: url(Images/flecha_abajo.png);"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarText" >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"  style="display: flex; justify-content: space-between;" >
+              <li class="nav-item" style="margin: 20px 20px 20px 20px;">
+                <a class="nav-link active" aria-current="page" href="#"> <img src="Images/facebook.png" alt="">
+                </a><p>facebook</p>
+              </li>
+              <li class="nav-item  "style="margin: 20px;">
+                <a class="nav-link" href="#"><img src="Images/twitter.png" alt=""></a>
+                <p>twitter</p>
+              </li>
+              <li class="nav-item"  style="margin: 20px;">
+                <a class="nav-link" href="#"><img src="Images/instag.png" alt=""></a>
+                <p>instagram</p>
+              </li>
+              <li class="nav-item"  style="margin: 20px;">
+                <a class="nav-link" href="#"><img src="Images/youtube.png" alt=""></a>
+                <p>youtube</p>
+              </li>
+            </ul>
+            <span class="navbar-text"  style="margin: 20px;">
+             <h5> <img src="Images/logo.png" alt=""> PLANTITAS</h5>
+            </span>
+          </div>
+        </div>
+      </nav>
+</body>
+</html>

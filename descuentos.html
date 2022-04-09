@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantitas</title>
+    <link rel="shortcut icon" href="images/icono_pestaña.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <link rel="stylesheet" href="estilo.css">
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+        
+        </style> 
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <nav class="navbar navbar-light " style="background-image: url(Images/madera_negra.jpg)  ;width: auto;">
+        <div class="container-fluid">
+          <a class="navbar-brand" style="font-family: 'Fredoka One', cursive;   ; font-size: x-large; color: white;" ><img src="Images/logo.png" alt="">PLANTITAS</a>
+          <form class="d-flex">
+            <input class="form-control me-2" type="Bus" placeholder="BUSCAR PRODUCTO" aria-label="Buscar" style="min-width: 400px;margin-bottom: 10px; " >
+            <button class="btn btn-outline-success" type="submit"><img src="Images/lupa.png" alt=""></button>
+          </form>
+          <div id="principal">
+            <button type="button" class="btn btn-success" style="margin-right: 20PX;"><img src="Images/head.png" alt=""> Hola NOM_EMP </button>
+
+          <button type="button" class="btn btn-danger" style="margin-right: 20px;"><img src="Images/off.png" alt=""> Cerrar sessión</button>
+
+          <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="background-color: transparent;"><img src="Images/menun.png" alt=""></button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">MENU</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div id="menu_admin">
+     
+<a href="productos.html"><div id="men">
+          <img src="Images/dot.png" alt="" style="margin-left: 10px;">
+          <a href="productos.html">Administrar Productos</a>
+        </div></a>
+      
+        <a href="descuentos.html"><div id="men">
+        <img src="Images/dot.png" alt="" style="margin-left: 10px;">
+        <a href="descuentos.html">Administrar Promociones y Descuentos</a>
+    </div></a>
+    
+    <a href=""><div id="men">
+        <img src="Images/dot.png" alt="" style="margin-left: 10px;">
+        <a href="">Administrar Usuario</a>
+    
+    </div></a>
+    <a href=""><div id="men">
+      <img src="Images/dot.png" alt="" style="margin-left: 10px;">
+      <a href="index1.html">Volver al menú principal</a>
+  
+  </div></a>
+</div>  
+</div>
+        </div>   
+      </div>
+      </nav>
+
+
+
+      <div id="boton_agregar">
+        <select class="form-select" aria-label="Default select example" style="width: 300px; margin-left: 50px; margin-top: 10px; ">
+            <option selected>Seleccionar Categoria</option>
+            <option value="1">plantas y semillas</option>
+            <option value="2">macetas</option>
+            <option value="3">Tierra y fertilizante</option>
+            <option value="4">accesorios</option>
+            <option value="5">inseticida</option>
+          </select>
+      <button type="button" class="btn btn-success" style="margin-right: 50px; margin-top: 10px;" ><img src="Images/mas.png" alt="">Agreagar Descuento o Promocion</button>
+    </div>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Productos o Categoria</th>
+            <th scope="col">% Descuento</th>
+            <th scope="col">Fecha publicación</th>
+            <th scope="col">Categoría</th>
+            <th scope="col">Administrar Promoción</th>
+          </tr>
+        </thead>
+        <tbody>
+
+
+          <tr>
+            <th scope="row">1</th>
+            <td><img src="Images/plata_carnivora.jpg" alt="" width="100px" style="border-style: solid;">
+                Planta carnivora</td>
+            <td>15%</td>
+            <td>01/01/22</td>
+            <td>Plantas y Semillas</td>
+            <td>
+                <div id="edicion">
+                <a href=""style="text-decoration: none;color: black;"><div style="margin: 10px;">
+                    <img src="Images/edit_pen.png" alt="" style="margin-left: 5px;">
+            <p>Editar</p>
+            </div></a>
+            <a href="" style="text-decoration: none;color: black;"><div style="margin: 10px;">
+                <img src="Images/trash.png" alt="" style="margin-left: 5px;">
+                <p>Borrar</p>
+            </div></a>
+        </div>
+        </td>
+        </tr>
+        
+
+        <tr>
+            <th scope="row">2</th>
+            <td><img src="Images/plata_carnivora.jpg" alt="" width="100px" style="border-style: solid;">
+                Planta carnivora</td>
+            <td>15%</td>
+            <td>01/01/22</td>
+            <td>Plantas y Semillas</td>
+            <td>
+                <div id="edicion">
+                <a href=""style="text-decoration: none;color: black;"><div style="margin: 10px;">
+                    <img src="Images/edit_pen.png" alt="" style="margin-left: 5px;">
+            <p>Editar</p>
+            </div></a>
+            <a href="" style="text-decoration: none;color: black;"><div style="margin: 10px;">
+                <img src="Images/trash.png" alt="" style="margin-left: 5px;">
+                <p>Borrar</p>
+            </div></a>
+        </div>
+        </td>
+        </tr>
+
+
+        <tr>
+            <th scope="row">3</th>
+            <td><img src="Images/plata_carnivora.jpg" alt="" width="100px" style="border-style: solid;">
+                Planta carnivora</td>
+            <td>15%</td>
+            <td>01/01/22</td>
+            <td>Plantas y Semillas</td>
+            <td>
+                <div id="edicion">
+                <a href=""style="text-decoration: none;color: black;"><div style="margin: 10px;">
+                    <img src="Images/edit_pen.png" alt="" style="margin-left: 5px;">
+            <p>Editar</p>
+            </div></a>
+            <a href="" style="text-decoration: none;color: black;"><div style="margin: 10px;">
+                <img src="Images/trash.png" alt="" style="margin-left: 5px;">
+                <p>Borrar</p>
+            </div></a>
+        </div>
+        </td>
+        </tr>
+
+       
+
+</body>
+</html>
