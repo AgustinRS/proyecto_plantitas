@@ -35,17 +35,23 @@
     margin-right: 50px;
     
 }
+#HOLA>.navbar-toggler>.navbar-toggler-icon{
+    background-image: url(Images/menun.png);
+}
+
 .card{
     width: 400px; 
     padding: 10px;
      
-    border-color: green; 
+    border-color: rgb(197, 197, 197); 
     margin: 40px;
     border-style: ridge 15px;
+    border-width: 2px;
     transition-duration: 0.5s;
 }
 .card:hover{
     border-style: solid ;
+    border-color: green;
     border-width: 2px; 
     transition-duration: 0.5s;
 }
@@ -121,20 +127,20 @@
    transition: 0.3s;
 }
 
+
+
 #venta{
-    width: 50%;
-}
-#imagen_precio{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
-#venta{
-    margin-top: 45px;
-    width: 500px;
+    width: 100%;
     border-style: solid;
     border-width: 1px;
-    margin-bottom: 180px;
+    margin: auto;
+    margin-left: 10px;
+    
+}
+#venta>.card-header{
+    display: flex;
+    justify-content: left;
+     align-items: center;
 }
 #container{
     display: flex;
@@ -148,9 +154,98 @@
     justify-content: left;
 }
 #descripcion{
-    margin-left: 300px;
-    margin-right: 200px;
+    width: 80%;
     border-style: solid;
     border-width: 1px;
+    margin: auto;
+    margin-top: 30px;
+} 
+.nav-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .breadcrumb{
+      margin-top: 20px;
+      margin-left: 20px;
+  }
+  .breadcrumb>.breadcrumb-item>a{
+    text-decoration: none;
+    color: green;
+    opacity: 70%;
+    transition: 0.3s;
+}
+.breadcrumb>.breadcrumb-item>a:hover{
+    text-decoration: none;
+    color: green;
+    opacity: 100%;
+    transition: 0.3s;
+}
+#resumen_compra{
+    background-image: url("Images/madera_negra.jpg") ;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#producto{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+#compra_menu>.navbar>.container-fluid{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: left;
+}
+#compra{
+    width: 90%;
+    margin: auto;
+}
+#compra>.card{
+    width: 100%;
+    margin: 10px;
+}
+#compra>.card>#card-body{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+}
+#compra>.card>#card-body>div>img{
+   width: 200px;
+  
+   margin: auto;
+    }
+    
+
+@media (max-width: 1145px){
+    #barra_nav>.navbar>.container-fluid{
+        justify-content: space-evenly;
+    }
+}
+@media (max-width: 800px){
+    #producto{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 800px){
+    #venta{
+        margin: auto;
+        margin-top: 10px;
+    }
 }
 
+@media (max-width: 800px){
+    #compra>.card>#card-body{
+        flex-direction: column;
+    }
+}
+@media (max-width: 800px){
+    #compra_menu>.navbar>.container-fluid{
+        justify-content: center;
+    }
+}

@@ -151,104 +151,77 @@
       </nav>
     
 
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div id="subtitulo" >
+        <div><h1> Compras </h1></div>
+        <div><img src="Images/bolsa_compra.png" alt="" width="80px"></div>
+    </div>
+    <div id="compra_menu">
+    <nav class="navbar navbar-light  ">
+        <div class="container-fluid">
+          <form class="d-flex" >
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit"><img src="Images/lupa.png" alt=""></button>
+          </form>
+
+
+          <div class="col-md-2.5" style="display: flex; justify-content: center; margin: 30px;">
+              <img src="Images/filtro.png" alt="" width="40px">
+            <select id="inputState" class="form-select">
+              <option selected>Todas</option>
+              <option>Últimos 30 días</option>
+              <option>Más de 1 mes</option>
+              <option>Más de 3 meses</option>
+              <option>Más de 6 meses</option>
+              <option>Más de 12 meses</option>
+            </select>
+          </div>
+<div style="display: flex; justify-content: center;">
+          <h4 style="margin: auto;">/</h4>
+          <p style="margin: auto;">2 Resultados</p>
+          </div>
+          </div>
+      </nav>
+
+
+
+</div>
+
+<div id="compra">
+
+    <div class="card">
+        <div class="card-header">
+          16 de Marzo
         </div>
-        <div class="carousel-inner" >
-          <div class="carousel-item active">
-            <img src="Images/plantas_1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h1>Bienvenidos a Plantitas</h1>
-              <p>Podrás encontar una gran variedad de Plantas y Accesorios para tu jardín</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="Images/planrtas2.jpg" class="d-block w-100" alt="..." >
-            <div class="carousel-caption d-none d-md-block">
-              <h1>Revisa Nuestro Catálogo</h1>
-              <p>Intentamos inovar con lo último en decoración para tu jardín y interior con gran variedad de flores y plantas</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="Images/plantas_3.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h1>Al comprar estarás ayudando</h1>
-              <p>Al realizar tus compras aquí ayudas a muchas personas ...</p>
-            </div>
-          </div>
+        <div id="card-body">
+            <div>
+          <h5 class="card-title">Bonsai Mr.miyagi</h5>
+          <img src="Images/bonsai.jpg" alt=""></div>
+          <div>
+          <p class="card-text">Categoria: Plantas y semillas</p>
+        <p>Cantidad: 1</p></div>
+          <div>
+            <p class="card-text" style="color: green;">Entregado</p></div>
+          <div><a href="vista_producto.html" class="btn btn-success">Volver a comprar</a></div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <div id="subtitulo" >
-          <div><h1> Productos Destacados </h1></div>
-          <div><img src="Images/plant.png" alt=""></div>
-      </div>
-<div id="productos_card">
-      <div class="row row-cols-1 row-cols-md-2 g-4" >
-          <div class="card">
-            <a href="vista_producto.html"><img src="Images/carta_1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">La Roja</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fuga vero architecto quod repudiandae rerum iusto, hic optio id soluta.</p>
-            </div></a>
-          </div>
-       
-        
-          <div class="card">
-           <a href="vista_producto.html" > <img src="Images/carta_2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">El Floripondio</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ab voluptas temporibus, aut quos et placeat odio distinctio doloribus doloremque!.</p>
-            </div></a>
-          </div>
-        
-        
-          <div class="card">
-            <a href="vista_producto.html"><img src="Images/carta_3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">La Negra</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam consectetur accusantium neque dicta atque quia nobis eveniet ea, necessitatibus reiciendis!.</p>
-            </div></a>
-          </div>
-       
-        
-          <div class="card">
-            <a href="vista_producto.html"><img src="Images/carta_4.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">El Cactus</h5>
-              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta dolore cum ipsam dolorum nihil, sequi repellat expedita molestias nulla natus.</p>
-            </div></a>
-          </div>
-        
-      
-      <div class="card">
-        <a href="vista_producto.html"><img src="Images/bonsai.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">El Bonsai</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex placeat possimus impedit ducimus aliquid quasi pariatur, praesentium itaque maxime nostrum.</p>
-        </div></a>
       </div>
 
       <div class="card">
-        <a href="vista_producto.html"><img src="Images/plata_carnivora.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">La Carnivora</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur inventore omnis dolore voluptas nesciunt dolores dolorem sint iusto at amet.</p>
-        </div></a>
+        <div class="card-header">
+          10 de Marzo
+        </div>
+        <div id="card-body">
+            <div>
+          <h5 class="card-title">Bonsai Mr.miyagi</h5>
+          <img src="Images/bonsai.jpg" alt=""></div>
+          <div>
+          <p class="card-text">Categoria: Plantas y semillas</p>
+        <p>Cantidad: 1</p></div>
+          <div>
+            <p class="card-text" style="color: green;">Entregado</p></div>
+          <div><a href="vista_producto.html" class="btn btn-success">Volver a comprar</a></div>
+        </div>
       </div>
-    
-  </div>
-  </div>
+</div>
     
       <nav class="navbar navbar-expand-lg  bg-light">
         <div id="HOLA" class="container-fluid">

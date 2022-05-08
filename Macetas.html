@@ -10,16 +10,12 @@
      <link rel="stylesheet" href="estilo.css">
      <style>
         @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-        .nav-item{
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
+        
         </style> 
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    
+    <div id="barra_nav">
     <nav class="navbar navbar-light " style="background-image: url(Images/madera_negra.webp) ;">
         <div class="container-fluid">
           <a class="navbar-brand" href="index1.html" style="font-family: 'Fredoka One', cursive;   ; font-size: x-large; color: white;" ><img src="Images/logo.png" alt="">PLANTITAS</a>
@@ -33,15 +29,15 @@
               Subscribirse!
             </button>
           </a>
-            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: transparent; margin-right: 10px;">
-              Iniciar sesión
-            </button>
+          <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: transparent; margin-right: 10px;"><img src="Images/head.png" alt="" width="20px">
+            Mi Cuenta
+          </button>
             <div class="dropdown-menu">
               
 
               <form class="px-4 py-3">
                 <div class="mb-3">
-                  <label for="exampleDropdownFormEmail1" class="form-label">Correo electrónico/label>
+                  <label for="exampleDropdownFormEmail1" class="form-label">Correo electrónico</label>
                   <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
                 </div>
                 <div class="mb-3">
@@ -78,7 +74,7 @@
         </div>     
       </div>
       </nav>
-
+</div>
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -115,176 +111,188 @@
       </nav>
     
       <div id="subtitulo" >
-          <div><img src="Images/plant.png" alt=""></div>
-          <div><h1> Macetas: </h1></div>
+          <div><h1> Macetas</h1></div>
           <div><img src="Images/plant.png" alt=""></div>
       </div>
 
-      <div class="row row-cols-1 row-cols-md-2 g-4" style="display: flex; justify-content: space-between;" >
+      <div class="row row-cols-1 row-cols-md-2 g-4" >
         
          
-
-        <div class="card" style="width: 18rem;">
+        <div class="card" >
+          <a href="vista_producto.html">
           <img src="Images/carta_1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">LA ROJA</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">$5.000 C/U</li>
           </ul>
-          <a class="btn btn-success" href="vista_producto.html" role="button">Ver Producto</a>
+          <a class="btn btn-success" href="vista_producto.html" role="button">Ver Producto</a></a>
         </div>
 
         
-        <div class="card" style="width: 18rem;">
+        <div class="card" >
+          <a href="vista_producto.html">
           <img src="Images/carta_1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">LA ROJA</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">$5.000 C/U</li>
           </ul>
           <a class="btn btn-success" href="vista_producto.html" role="button">Ver Producto</a>
+          </a>
         </div>
 
 
 
-        <div class="card" style="width: 18rem;">
+        <div class="card" >
+          <a href="vista_producto.html">
           <img src="Images/carta_1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">LA ROJA</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">$5.000 C/U</li>
           </ul>
           <a class="btn btn-success" href="vista_producto.html" role="button">Ver Producto</a>
+          </a>
         </div>
 
 
 
      
       
-        <div class="card" style="width: 18rem;">
+        <div class="card" >
+          <a href="vista_producto.html">
           <img src="Images/carta_1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">LA ROJA</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">$5.000 C/U</li>
           </ul>
           <a class="btn btn-success" href="vista_producto.html" role="button">Ver Producto</a>
+          </a>
         </div>
       
       
-        <div class="card" style="width: 18rem;">
+        <div class="card" >
+          <a href="vista_producto.html">
           <img src="Images/carta_1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">LA ROJA</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">$5.000 C/U</li>
           </ul>
           <a class="btn btn-success" href="vista_producto.html" role="button">Ver Producto</a>
+          </a>
         </div>
      
       
-        <div class="card" style="width: 18rem;">
+        <div class="card" >
+          <a href="vista_producto.html">
           <img src="Images/carta_1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">LA ROJA</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">$5.000 C/U</li>
           </ul>
           <a class="btn btn-success" href="vista_producto.html" role="button">Ver Producto</a>
+          </a>
         </div>
       
     
-
-        <div class="card" style="width: 18rem;">
+        <div class="card" >
+          <a href="vista_producto.html">
           <img src="Images/carta_1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">LA ROJA</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">$5.000 C/U</li>
           </ul>
           <a class="btn btn-success" href="vista_producto.html" role="button">Ver Producto</a>
+          </a>
         </div>
 
 
 
 
-    <div class="card" style="width: 18rem;">
-      <img src="Images/marihuana-bigggg.jpg" class="card-img-top" alt="..." style="width: 265px ; height: 250px;">
+        <div class="card" >
+          <a href="vista_producto.html">
+          <img src="Images/carta_1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">LA MARY JANE</h5>
+            <h5 class="card-title">LA ROJA</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">$5.000 C/U</li>
           </ul>
           <a class="btn btn-success" href="vista_producto.html" role="button">Ver Producto</a>
+          </a>
         </div>
 
-    
-  </div>
-    
-
-
-      <nav class="navbar navbar-expand-lg  bg-light">
-        <div id="HOLA" class="container-fluid">
-          <p class="navbar-brand " href="#"> <img src="Images/icons8_facebook_like_50px.png" alt=""> SIGUENOS <img src="Images/icons8_heart_50px.png" alt=""></p>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"  >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse " id="navbarText" >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0"  style="display: flex; justify-content: space-between;" >
-              <li class="nav-item" style="margin: 20px 20px 20px 70px;">
-                <a class="nav-link active" aria-current="page" href="#"> <img src="Images/facebook.png" alt="">
-                </a><p>facebook</p>
-              </li>
-              <li class="nav-item  "style="margin: 20px;">
-                <a class="nav-link" href="#"><img src="Images/twitter.png" alt=""></a>
-                <p>twitter</p>
-              </li>
-              <li class="nav-item"  style="margin: 20px;">
-                <a class="nav-link" href="#"><img src="Images/instag.png" alt=""></a>
-                <p>instagram</p>
-              </li>
-              <li class="nav-item"  style="margin: 20px;">
-                <a class="nav-link" href="#"><img src="Images/youtube.png" alt=""></a>
-                <p>youtube</p>
-              </li>
-            </ul>
-            <span class="navbar-text"  style="margin: 20px;">
-             <h5> <img src="Images/logo.png" alt=""> PLANTITAS</h5>
-            </span>
+        <div class="card" >
+          <a href="vista_producto.html">
+          <img src="Images/carta_1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">LA ROJA</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">$5.000 C/U</li>
+          </ul>
+          <a class="btn btn-success" href="vista_producto.html" role="button">Ver Producto</a>
+          </a>
         </div>
-      </nav>
+    
+</div>
+
+    
+
+    
+
+
+  <nav class="navbar navbar-expand-lg  bg-light">
+    <div id="HOLA" class="container-fluid">
+      <p class="navbar-brand " href="#"> <img src="Images/icons8_facebook_like_50px.png" alt=""> SIGUENOS <img src="Images/icons8_heart_50px.png" alt="" style="margin-right: 50px;"></p>
+      <button class="navbar-toggler " type="button " data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation "   >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarText" >
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"  style="display: flex; justify-content: space-between;" >
+          <li class="nav-item" style="margin: 20px 20px 20px 20px;">
+            <a class="nav-link active" aria-current="page" href="#"> <img src="Images/facebook.png" alt="">
+            </a><p>facebook</p>
+          </li>
+          <li class="nav-item  "style="margin: 20px;">
+            <a class="nav-link" href="#"><img src="Images/twitter.png" alt=""></a>
+            <p>twitter</p>
+          </li>
+          <li class="nav-item"  style="margin: 20px;">
+            <a class="nav-link" href="#"><img src="Images/instag.png" alt=""></a>
+            <p>instagram</p>
+          </li>
+          <li class="nav-item"  style="margin: 20px;">
+            <a class="nav-link" href="#"><img src="Images/youtube.png" alt=""></a>
+            <p>youtube</p>
+          </li>
+        </ul>
+        <span class="navbar-text"  style="margin: 20px;">
+         <h5> <img src="Images/logo.png" alt=""> PLANTITAS</h5>
+        </span>
+      </div>
+    </div>
+  </nav>
 </body>
 </html>
