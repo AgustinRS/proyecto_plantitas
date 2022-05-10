@@ -219,6 +219,29 @@
   
    margin: auto;
     }
+#subtitulo-sus{
+    background-image: url(Images/madera_negra.jpg);
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+   align-items: center;
+   border-style: solid;
+   border-color: black;
+   border-width: 2px;
+   border-radius: 15px 15px 0 0 ;
+}
+#contenido-form{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius:  0 0 15px 15px;
+    padding: 10px;
+}
     
 
 @media (max-width: 1145px){
