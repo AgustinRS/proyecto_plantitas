@@ -14,6 +14,7 @@
         </style> 
 </head>
 <body>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <div id="barra_nav">
     <nav class="navbar navbar-light " style="background-image: url(Images/madera_negra.jpg) ;">
@@ -51,15 +52,16 @@
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div >
           
-            <div class="offcanvas-body" >
-              <table class="table table-dark table-striped">
+            <div class="offcanvas-body"  >
+              <div class="table-responsive">
+              <table class="table table-dark table-striped align-middle" >
                 <thead>
                   <tr>
-                    <th scope="col"><img src="Images/logo.png" alt="" width="30px"></th>
+                    <th scope="col"></th>
                     <th scope="col">Producto</th>
                     <th scope="col">Precio</th>
                     <th scope="col">Cantidad</th>
-                    <th scope="col"><img src="Images/logo.png" alt="" width="30px"></th>
+                    <th scope="col"></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -67,43 +69,44 @@
                     <th scope="row">1</th>
                     <td><img src="Images/bonsai.jpg" alt="" width="70px"></td>
                     <td>$30.000</td>
-                    <td>  <div id="container" style="width: 2px;" >            
-                      <button onclick="increment(1) " style="background-color: white;">+</button>  
-                      <h2 id="counting">1</h2>
-                      <button onclick="decrement(1)" style= "background-color:white;">-</button>         
+                    <td>  <div id="container"  >            
+                      <button id="incrementa" type="button" class="btn btn-outline-light">+</button>
+                      <h3 id="display">1</h3>
+              <button id="disminuye" type="button" class="btn btn-outline-light">-</button>        
                   </div></td>
                     <td><a href="" style="text-decoration: none;color: black;">
-                      <img src="Images/trash_blanco.png" alt="" > 
+                      <img src="Images/trash_blanco.png" alt="" width="40px"> 
                   </a></td>
                   </tr>
                   <tr>
                     <th scope="row">2</th>
                     <td><img src="Images/bonsai.jpg" alt="" width="70px"></td>
                     <td>$10.000</td>
-                    <td><div id="container" style="width: 2px;" >            
-                      <button onclick="increment(1) " style="background-color: white;">+</button>  
-                      <h2 id="counting">1</h2>
-                      <button onclick="decrement(1)" style= "background-color:white;">-</button>         
+                    <td>  <div id="container"  >            
+                      <button id="incrementa" type="button" class="btn btn-outline-light">+</button>
+                      <h3 id="display">2</h3>
+              <button id="disminuye" type="button" class="btn btn-outline-light">-</button>        
                   </div></td>
                     <td><a href="" style="text-decoration: none;color: black;">
-                      <img src="Images/trash_blanco.png" alt="" > 
+                      <img src="Images/trash_blanco.png" alt="" width="40px"> 
                   </a></td>
                   </tr>
                   <tr>
                     <th scope="row">3</th>
                     <td><img src="Images/bonsai.jpg" alt="" width="70px"></td>
                     <td>$5.000</td>
-                    <td><div id="container" style="width: 2px;" >            
-                      <button onclick="increment(1) " style="background-color: white;">+</button>  
-                      <h2 id="counting">2</h2>
-                      <button onclick="decrement(1)" style= "background-color:white;">-</button>         
+                    <td>  <div id="container"  >            
+                      <button id="incrementa" type="button" class="btn btn-outline-light">+</button>
+                      <h3 id="display">1</h3>
+              <button id="disminuye" type="button" class="btn btn-outline-light">-</button>        
                   </div></td>
                     <td><a href="" style="text-decoration: none;color: black;">
-                      <img src="Images/trash_blanco.png" alt="" > 
+                      <img src="Images/trash_blanco.png" alt="" width="40px"> 
                   </a></td>
                   </tr>
                 </tbody>
               </table>
+              </div>
             </div>
            <div id="resumen_compra"> 
              <p style="color: white; margin-top: 20px;">SUBTOTAL:  $50.000</p>
@@ -294,7 +297,28 @@
       <a class="btn btn-success" href="vista_producto.html" role="button">Ver Producto</a></a>
     </div>
   </div>
-    
+
+
+  <script>
+    var i = 0;
+   $('#incrementa').click(function(){ 
+         
+      if (i < 20 ) { /*Cambiar el >= 0 por < 10 si quieres limitar el incremento*/
+              i++;
+          } else if (i = i++) {
+              i = 1;
+          }
+          document.getElementById("display").innerHTML = i;
+   })
+  
+   $('#disminuye').click(function(){ 
+   
+    if (i > 1) {--i;} 
+          document.getElementById("display").innerHTML = i;
+   })
+  </script>
+
+  
       <nav class="navbar navbar-expand-lg  bg-light">
         <div id="HOLA" class="container-fluid">
           <p class="navbar-brand " href="#"> <img src="Images/icons8_facebook_like_50px.png" alt=""> SIGUENOS <img src="Images/icons8_heart_50px.png" alt="" style="margin-right: 50px;"></p>
