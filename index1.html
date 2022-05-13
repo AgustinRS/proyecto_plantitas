@@ -83,9 +83,9 @@
                     <td><img src="Images/bonsai.jpg" alt="" width="70px"></td>
                     <td>$10.000</td>
                     <td>  <div id="container"  >            
-                      <button id="incrementa" type="button" class="btn btn-outline-light">+</button>
-                      <h3 id="display">2</h3>
-              <button id="disminuye" type="button" class="btn btn-outline-light">-</button>        
+                      <button id="incrementa2" type="button" class="btn btn-outline-light">+</button>
+                      <h3 id="display2">2</h3>
+              <button id="disminuye2" type="button" class="btn btn-outline-light">-</button>        
                   </div></td>
                     <td><a href="" style="text-decoration: none;color: black;">
                       <img src="Images/trash_blanco.png" alt="" width="40px"> 
@@ -96,9 +96,9 @@
                     <td><img src="Images/bonsai.jpg" alt="" width="70px"></td>
                     <td>$5.000</td>
                     <td>  <div id="container"  >            
-                      <button id="incrementa" type="button" class="btn btn-outline-light">+</button>
-                      <h3 id="display">1</h3>
-              <button id="disminuye" type="button" class="btn btn-outline-light">-</button>        
+                      <button id="incrementa3" type="button" class="btn btn-outline-light">+</button>
+                      <h3 id="display3">1</h3>
+              <button id="disminuye3" type="button" class="btn btn-outline-light">-</button>        
                   </div></td>
                     <td><a href="" style="text-decoration: none;color: black;">
                       <img src="Images/trash_blanco.png" alt="" width="40px"> 
@@ -300,7 +300,7 @@
 
 
   <script>
-    var i = 0;
+    var i = 1;
    $('#incrementa').click(function(){ 
          
       if (i < 20 ) { /*Cambiar el >= 0 por < 10 si quieres limitar el incremento*/
@@ -315,6 +315,42 @@
    
     if (i > 1) {--i;} 
           document.getElementById("display").innerHTML = i;
+   })
+  </script>
+  <script>
+    var b = 2;
+   $('#incrementa2').click(function(){ 
+         
+      if (b < 20 ) { /*Cambiar el >= 0 por < 10 si quieres limitar el incremento*/
+              b++;
+          } else if (b = b++) {
+              b = 1;
+          }
+          document.getElementById("display2").innerHTML = b;
+   })
+  
+   $('#disminuye2').click(function(){ 
+   
+    if (b > 1) {--b;} 
+          document.getElementById("display2").innerHTML = b;
+   })
+  </script>
+  <script>
+    var c = 1;
+   $('#incrementa3').click(function(){ 
+         
+      if (c < 20 ) { /*Cambiar el >= 0 por < 10 si quieres limitar el incremento*/
+              c++;
+          } else if (c = c++) {
+              c = 1;
+          }
+          document.getElementById("display3").innerHTML = c;
+   })
+  
+   $('#disminuye3').click(function(){ 
+   
+    if (c > 1) {--c;} 
+          document.getElementById("display3").innerHTML = c;
    })
   </script>
 
