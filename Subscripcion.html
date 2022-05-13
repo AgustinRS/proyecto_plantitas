@@ -30,7 +30,7 @@
           
 
         <div id="contenido-form">
-        <form class="row g-3 needs-validation" novalidate>
+        <form class="row g-3 needs-validation" id="miformulario" onsubmit="verificarPasswords();" novalidate>
   <div class="col-md-4">
     <label for="validationCustom01" class="form-label">First name</label>
     <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre" required>
@@ -50,7 +50,7 @@
     <label for="validationCustomUsername" class="form-label">Username</label>
       <input type="email" class="form-control" id="validationCustomUsername" placeholder="email@ejemplo.com" required>
       <div class="invalid-feedback">
-        Ingrese un e-mail válido  
+        Ingrese un e-mail valido  
       </div>
   </div>
   
@@ -64,7 +64,7 @@
     </div>
   </div>
 
-  <div class="col-md-3">
+  <div class="col-md-6">
     <label for="validationCustom04" class="form-label">State</label>
     <select class="form-select" id="comunas" required>
       
@@ -74,26 +74,43 @@
     </div>
   </div>
   
-  <div class="col-md-3">
-    <label for="validationCustom05" class="form-label">Zip</label>
-    <input type="text" class="form-control" id="validationCustom05" required>
-    <div class="invalid-feedback">
-      Please provide a valid zip.
-    </div>
+
+  <div class="form-group">
+      <label for="usuario">Usuario</label>
+      <input type="text" class="form-control" id="usuario" value="usuariogenial" required>
   </div>
+  <div class="form-group">
+      <label for="pass1">Contraseña</label>
+      <input type="password" class="form-control" id="pass1" value="1234"  required>
+  </div>
+  <div class="form-group">
+      <label for="pass2">Vuelve a escribir la Contraseña</label>
+      <input type="password" class="form-control" id="pass2" value="3456" required>
+  </div>
+  <!-- Mensajes de Verificación -->
+<div id="error" class="alert alert-danger ocultar" role="alert">
+  Las Contraseñas no coinciden, vuelve a intentar !
+</div>
+<div id="ok" class="alert alert-success ocultar" role="alert">
+  Las Contraseñas coinciden ! 
+</div>
+
+
+
+
   <div class="col-12">
     <div class="form-check">
       <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
       <label class="form-check-label" for="invalidCheck">
-        Agree to terms and conditions
+        Aceptar terminos y condiciones
       </label>
       <div class="invalid-feedback">
-        You must agree before submitting.
+       Debe aceptar antes de enviar
       </div>
     </div>
   </div>
   <div class="col-12">
-    <button class="btn btn-primary" type="submit">Suscribirse</button>
+    <button class="btn btn-primary" type="submit" id="login">Suscribirse</button>
   </div>
   <div class="col-12">
   <a class="btn btn-primary" href="index1.html" role="button">Volver</a>
@@ -202,26 +219,107 @@
   });
 </script>
 
+
 <script>// Example starter JavaScript for disabling form submissions if there are invalid fields
   (function () {
     'use strict'
   
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
     var forms = document.querySelectorAll('.needs-validation')
-  
+
     // Loop over them and prevent submission
     Array.prototype.slice.call(forms)
       .forEach(function (form) {
         form.addEventListener('submit', function (event) {
-          if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-          }
-  
+            if (!form.checkValidity()) {
+             event.preventDefault()
+             event.stopPropagation()
+                  }
+
           form.classList.add('was-validated')
-        }, false)
-      })
+          
+        },  false)
+       })
   })()</script>
+  
+  <script>function verificarPasswords() {
+ 
+    // Ontenemos los valores de los campos de contraseñas 
+    pass1 = document.getElementById('pass1');
+    pass2 = document.getElementById('pass2');
+ 
+    // Verificamos si las constraseñas no coinciden 
+    if (pass1.value != pass2.value) {
+ 
+        // Si las constraseñas no coinciden mostramos un mensaje 
+        document.getElementById("error").classList.add("mostrar");
+
+        $('#pass2').val("");
+ 
+        // Mostramos un mensaje mencionando que las Contraseñas coinciden 
+        document.getElementById("ok").classList.add("ocultar");
+ 
+ 
+        return false;
+    } else {
+ 
+        // Si las contraseñas coinciden ocultamos el mensaje de error
+        document.getElementById("error").classList.remove("mostrar");
+ 
+        // Mostramos un mensaje mencionando que las Contraseñas coinciden 
+        document.getElementById("ok").classList.remove("ocultar");
+ 
+        // Refrescamos la página (Simulación de envío del formulario) 
+       
+    }
+ 
+}</script>
+  <!-- <script>
+    (function () {
+      'use strict'
+      var forms = document.querySelectorAll('.needs-validation')
+      var password = $("#validationCustom05").val();
+      var confirmPassword = $("#validationCustom06").val();
+     // Loop over them and prevent submission
+     Array.prototype.slice.call(forms)
+     .forEach(function (form) {
+       form.addEventListener('submit', function (event) {
+        if (password != confirmPassword){
+          $('#validationCustom06').val("")
+          event.preventDefault()
+                event.stopPropagation()
+         }
+ 
+         form.classList.add('was-validated')
+       }, false)
+     })
+ })()</script>
+ 
+   -->
+<!-- 
+  <script type="text/javascript">
+    function checkPasswordMatch() {
+        var password = $("#txtNewPassword").val();
+        var confirmPassword = $("#txtConfirmPassword").val();
+    
+        if (password != confirmPassword)
+            $("#divCheckPasswordMatch").html("Passwords do not match!");
+        else
+            $("#divCheckPasswordMatch").html("Passwords match.");
+            stopImmediatePropagation
+
+            $(document).on('submit', function (event) {
+
+              var password = $("#txtNewPassword").val();
+        var confirmPassword = $("#txtConfirmPassword").val();
+              
+        if (password != confirmPassword)
+        $("#divCheckPasswordMatch").html("Passwords do not match!");
+    else
+        $("#divCheckPasswordMatch").html("Passwords match.");
+        stopImmediatePropagation
+    }
+    </script> -->
 
           <nav class="navbar navbar-expand-lg  bg-light">
             <div id="HOLA" class="container-fluid">

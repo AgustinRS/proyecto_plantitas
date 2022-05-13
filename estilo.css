@@ -118,6 +118,9 @@
 }
 #men{
     margin: 20px;
+    border-style: solid;
+
+    border-color: transparent;
     transition: 0.3s;
 }
 #men:hover{
@@ -271,4 +274,38 @@
     #compra_menu>.navbar>.container-fluid{
         justify-content: center;
     }
+}
+
+ 
+.ocultar {
+    display: none;
+}
+ 
+.mostrar {
+    display: block;
+}
+ 
+#agregar_product{
+    
+    width: 80%;
+    margin: auto;
+  padding: 20px;
+   border-style: solid;
+   border-color: black;
+   border-width: 2px;
+   border-radius: 0 0 15px 15px ;
+   margin-bottom: 20px;
+}
+
+.texto-encima{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: white;
+    opacity: 70%;
+    border-radius: 5px;
+  box-shadow: 5px 5px;
 }
